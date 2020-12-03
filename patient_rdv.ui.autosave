@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -39,7 +39,7 @@
       </rect>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="widget">
       <attribute name="title">
@@ -245,10 +245,37 @@
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>160</y>
+          <y>140</y>
           <width>93</width>
           <height>28</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
         </property>
         <property name="text">
          <string>Ajouter</string>
@@ -262,6 +289,33 @@
           <width>93</width>
           <height>28</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
         </property>
         <property name="text">
          <string>Quitter</string>
@@ -493,6 +547,33 @@
            <height>23</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+         </property>
          <property name="text">
           <string>Valider</string>
          </property>
@@ -505,6 +586,33 @@
            <width>75</width>
            <height>23</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
          </property>
          <property name="text">
           <string>Quitter</string>
@@ -536,6 +644,33 @@
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
        <property name="text">
         <string>Trier par Nom</string>
        </property>
@@ -549,6 +684,33 @@
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
        <property name="text">
         <string>Trier par Cin</string>
        </property>
@@ -557,36 +719,155 @@
        <property name="geometry">
         <rect>
          <x>510</x>
-         <y>30</y>
+         <y>40</y>
          <width>113</width>
          <height>22</height>
         </rect>
        </property>
       </widget>
-      <widget class="QLabel" name="label_12">
-       <property name="geometry">
-        <rect>
-         <x>330</x>
-         <y>30</y>
-         <width>171</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Rechercher le Patient par Cin</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="rech_patient">
        <property name="geometry">
         <rect>
          <x>660</x>
-         <y>30</y>
+         <y>40</y>
          <width>93</width>
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
        <property name="text">
         <string>Rechercher</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="imp_patient">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>140</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Imprimer</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>40</y>
+         <width>73</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>nom</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>cin</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>region</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="pdf_patient">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>210</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>PDF</string>
        </property>
       </widget>
      </widget>
@@ -641,6 +922,33 @@
           <height>23</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+        </property>
         <property name="text">
          <string>Supprimer</string>
         </property>
@@ -653,6 +961,33 @@
           <width>75</width>
           <height>23</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
         </property>
         <property name="text">
          <string>Quitter</string>
@@ -676,7 +1011,7 @@
       </rect>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="widget_2">
       <attribute name="title">
@@ -795,6 +1130,33 @@
           <height>28</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+        </property>
         <property name="text">
          <string>Ajouter</string>
         </property>
@@ -807,6 +1169,71 @@
           <width>93</width>
           <height>28</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+
+{
+
+	background: transparent;
+
+	border-style:solid;
+
+	border-radius:7px;
+
+	border-width:1px;
+
+border-color: rgb(50, 53, 57);
+
+	color:rgb(0,0,0);
+
+	font-size:16px;
+
+font-family:Calibri;
+
+}
+
+
+
+QPushButton:hover
+
+{
+
+	background-color: #00000000;
+
+	border-color: rgb(255, 0, 0);
+
+	/*color:rgb(30, 227, 0);*/
+
+}
+
+
+
+QPushButton:focus
+
+{
+
+	background-color: rgb(255, 0, 0);
+
+	border-color:rgb(255, 0, 0);
+
+	color:rgb(255, 255, 255);
+
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
         </property>
         <property name="text">
          <string>Quitter</string>
@@ -992,6 +1419,33 @@
            <height>23</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+         </property>
          <property name="text">
           <string>Valider</string>
          </property>
@@ -1004,6 +1458,33 @@
            <width>75</width>
            <height>23</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(255, 0, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
+	color:rgb(255, 255, 255);
+}</string>
          </property>
          <property name="text">
           <string>Quitter</string>
@@ -1035,8 +1516,230 @@
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
        <property name="text">
         <string>Trier par Nom</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>20</y>
+         <width>73</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>nom_prenom</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>cin_pat</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>la_maladies</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>500</x>
+         <y>20</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="rech_rdv_2">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>20</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="imp_patient_2">
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>80</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Imprimer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pdf_patient_2">
+       <property name="geometry">
+        <rect>
+         <x>750</x>
+         <y>160</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>PDF</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>10</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string>Trier par cin</string>
        </property>
       </widget>
      </widget>
@@ -1091,6 +1794,33 @@
           <height>23</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+        </property>
         <property name="text">
          <string>supprimer</string>
         </property>
@@ -1099,10 +1829,37 @@
         <property name="geometry">
          <rect>
           <x>420</x>
-          <y>100</y>
+          <y>110</y>
           <width>75</width>
           <height>23</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
         </property>
         <property name="text">
          <string>Quitter</string>

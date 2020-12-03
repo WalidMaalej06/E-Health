@@ -29,6 +29,7 @@ public:
       QSqlQueryModel* afficher();
       bool supprimer(int);
       bool modifier(int,QString,QString,QString,QString);
+       bool recherche(QString nom_prenom,int cin_pat,QString la_maladies);
 
 
 

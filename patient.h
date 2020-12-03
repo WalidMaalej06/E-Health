@@ -37,6 +37,7 @@ public:
      QSqlQueryModel* afficher();
       bool supprimer(int);
       bool modifier(int,QString,QString,QString,QString,QString,QString,QString);
+      bool recherche(QString nom,int cin,QString region);
  private:
  int cin;
  QString nom,prenom,sexe,region,ville,date_naissance,lieu;

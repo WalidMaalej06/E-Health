@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QObject>
 #include <QSqlQueryModel>
+#include <QMessageBox>
 
 Patient::Patient()
 {
@@ -85,4 +86,37 @@ bool Patient::modifier(int cin,QString nom,QString prenom,QString sexe,QString v
     query.bindValue(":date_naissance", date_naissance);
     query.bindValue(":lieu", lieu);
     return  query.exec();
+}
+bool Patient::recherche(QString nom,int cin,QString region)
+{
+    QMessageBox msgBox;
+    QMessageBox msgBox1;
+    QSqlQuery query;
+    bool retour=0;
+    int count=0;
+    query.prepare("SELECT * FROM Patient WHERE nom= ? or cin= ? or region= ?");
+    query.addBindValue(nom);
+    query.addBindValue(cin);
+    query.addBindValue(region);
+    if(query.exec() )
+        {
+while (query.next())
+   {
+   count ++;
+    }
+if(count==1)
+   {
+    msgBox.setText("Patient existe");
+    msgBox.exec();
+    retour=1;
+   }
+else if (count<1)
+{
+    msgBox1.setText("Patient n'existe pas");
+        msgBox1.exec();
+        retour=0;
+}
+        }
+    return retour;
+
 }

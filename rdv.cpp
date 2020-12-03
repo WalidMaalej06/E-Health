@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QObject>
 #include <QSqlQueryModel>
+#include <QMessageBox>
 rdv::rdv()
 {
 cin_pat=0;
@@ -80,6 +81,38 @@ bool rdv::modifier(int cin_pat,QString nom_prenom,QString jours,QString heures,Q
     query.bindValue(":la_maladies", la_maladies);
     return  query.exec();
 }
+bool rdv::recherche(QString nom_prenom,int cin_pat,QString la_maladies)
+{
+    QMessageBox msgBox;
+    QMessageBox msgBox1;
+    QSqlQuery query;
+    bool retour=0;
+    int count=0;
+    query.prepare("SELECT * FROM Rdv WHERE nom_prenom= ? or cin_pat= ? or la_maladies= ?");
+    query.addBindValue(nom_prenom);
+    query.addBindValue(cin_pat);
+    query.addBindValue(la_maladies);
+    if(query.exec() )
+        {
+while (query.next())
+   {
+   count ++;
+    }
+if(count==1)
+   {
+    msgBox.setText("Rdv existe");
+    msgBox.exec();
+    retour=1;
+   }
+else if (count<1)
+{
+    msgBox1.setText("Rdv n'existe pas");
+        msgBox1.exec();
+        retour=0;
+}
+        }
+    return retour;
 
+}
 
 

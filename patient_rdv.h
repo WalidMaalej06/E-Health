@@ -48,6 +48,21 @@ private slots:
 
     void on_pushButton_modifierrdv_clicked();
 
+
+    void on_rech_patient_clicked();
+
+    void on_imp_patient_clicked();
+
+    void on_pdf_patient_clicked();
+
+    void on_rech_rdv_2_clicked();
+
+    void on_imp_patient_2_clicked();
+
+    void on_pdf_patient_2_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::patient_rdv *ui;
      Patient s;
