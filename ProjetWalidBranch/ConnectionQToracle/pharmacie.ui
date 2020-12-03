@@ -6,526 +6,1059 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>841</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTabWidget" name="afficherStock_2">
+  <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>741</width>
-     <height>571</height>
+     <x>10</x>
+     <y>10</y>
+     <width>811</width>
+     <height>621</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
-   <widget class="QWidget" name="ajouterMedicament">
+   <widget class="QWidget" name="tab">
     <attribute name="title">
-     <string>Ajouter medicament</string>
+     <string>Gestion du stock des medicaments</string>
     </attribute>
-    <widget class="QGroupBox" name="groupBox">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>60</y>
-       <width>401</width>
-       <height>311</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>Ajouter Medicament</string>
-     </property>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>70</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Nom du médicament</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="nameInput">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>70</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>110</y>
-        <width>47</width>
-        <height>14</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Famille</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>160</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Quantite</string>
-      </property>
-     </widget>
-     <widget class="QDateEdit" name="dateInput">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>200</y>
-        <width>110</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>200</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Date d'expiration</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>250</y>
-        <width>47</width>
-        <height>14</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Prix</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="prixInput">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>250</y>
-        <width>81</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>230</x>
-        <y>250</y>
-        <width>21</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>DT</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_15">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Reference</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="refInput">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>30</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="quantiteInput">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>150</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="familleInput">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>110</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QPushButton" name="buttonAjouter">
-     <property name="geometry">
-      <rect>
-       <x>480</x>
-       <y>340</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Ajouter</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="afficherStock">
-    <attribute name="title">
-     <string>Afficher le stock</string>
-    </attribute>
-    <widget class="QRadioButton" name="radioButton_4">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>60</y>
-       <width>97</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Famille</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_8">
-     <property name="geometry">
-      <rect>
-       <x>340</x>
-       <y>30</y>
-       <width>93</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Rechercher</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QTabWidget" name="afficherStock_2">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>40</y>
-       <width>181</width>
-       <height>22</height>
+       <y>10</y>
+       <width>771</width>
+       <height>571</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QRadioButton" name="radioButton_6">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>20</y>
-       <width>97</width>
-       <height>20</height>
-      </rect>
+     <property name="currentIndex">
+      <number>0</number>
      </property>
-     <property name="text">
-      <string>Nom</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_14">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>40</y>
-       <width>47</width>
-       <height>14</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Trier par</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="comboBox_3">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>40</y>
-       <width>91</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="geometry">
-      <rect>
-       <x>650</x>
-       <y>40</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Acutaliser</string>
-     </property>
-    </widget>
-    <widget class="QTableView" name="tabMedicaments">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>110</y>
-       <width>691</width>
-       <height>401</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="BstatMedicaments">
-     <property name="geometry">
-      <rect>
-       <x>650</x>
-       <y>520</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Statistiques</string>
-     </property>
+     <widget class="QWidget" name="ajouterMedicament">
+      <attribute name="title">
+       <string>Ajouter medicament</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>60</y>
+         <width>401</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Ajouter Medicament</string>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom du médicament</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nameInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>70</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Famille</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Quantite</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>250</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>250</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Date d'expiration</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Prix</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="prixInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>300</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>300</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DT</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reference</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="refInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>30</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="quantiteInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>150</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cFamilleInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>110</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateFabInput">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>200</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>200</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Date de fabrication</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="buttonAjouter">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>340</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="afficherStock">
+      <attribute name="title">
+       <string>Afficher le stock</string>
+      </attribute>
+      <widget class="QPushButton" name="buttonRechercheMed">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>40</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="valueResearch">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>181</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>40</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Trier par</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cTriMed">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>40</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bTri">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>40</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Acutaliser</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tabMedicaments">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>731</width>
+         <height>401</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cCritereMed">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BimpMed">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>520</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Imprimer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pdfMed">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>520</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Enregistrer sous PDF</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="modifierMedicament">
+      <attribute name="title">
+       <string>Modifier ou Supprimer un medicament</string>
+      </attribute>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>371</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Modifier Medicament</string>
+       </property>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nom du médicament</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nomEdit">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>50</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Famille</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>260</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>260</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Date d'expiration</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Prix</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="prixEdit">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>310</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>310</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>DT</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="quantiteEdit">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>150</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Quantite</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cFamilleEdit">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>100</y>
+          <width>111</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>210</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Date de fabrication</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateFabEdit">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>210</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="BmedicamentDelete">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>390</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BconsulterMedicament">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>30</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Consulter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reference</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BmedicamentsEdit">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>360</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="refEdit">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="modifierMedicament">
+   <widget class="QWidget" name="tab_2">
     <attribute name="title">
-     <string>Modifier ou Supprimer un medicament</string>
+     <string>Gestion du stock des poches du sang</string>
     </attribute>
-    <widget class="QGroupBox" name="groupBox_2">
+    <widget class="QTabWidget" name="tabPharmacie">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>100</y>
-       <width>371</width>
-       <height>311</height>
+       <x>10</x>
+       <y>10</y>
+       <width>771</width>
+       <height>571</height>
       </rect>
      </property>
-     <property name="title">
-      <string>Modifier Medicament</string>
+     <property name="currentIndex">
+      <number>0</number>
      </property>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Nom du médicament</string>
-      </property>
+     <widget class="QWidget" name="ajouterPoche">
+      <attribute name="title">
+       <string>Ajouter poche de sang</string>
+      </attribute>
+      <widget class="QPushButton" name="ajouterPoche_2">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>410</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>70</y>
+         <width>461</width>
+         <height>371</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Ajouter Poche</string>
+       </property>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Reference</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="refInputPoche">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>50</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cTypeInputPoche">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>100</y>
+          <width>62</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>110</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>160</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Id de donneur</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateInputPoche">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>210</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>210</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Date de don</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>260</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Volume</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="volumeInputPoche">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>260</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>260</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>mL</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="idInputPoche">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>160</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
      </widget>
-     <widget class="QLineEdit" name="nomEdit">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>50</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
+     <widget class="QWidget" name="afficherStock_3">
+      <attribute name="title">
+       <string>Afficher le stock</string>
+      </attribute>
+      <widget class="QPushButton" name="rechercherButtonPoche">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>40</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="rechercheInputPoche">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>181</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>40</y>
+         <width>47</width>
+         <height>14</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Trier par</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cTriPoches">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>40</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="actualiserTriPoches">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>40</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Acutaliser</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BimpPoches">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>510</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Imprimer</string>
+       </property>
+      </widget>
+      <widget class="QTableView" name="tabPoches">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>731</width>
+         <height>411</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cRecherchePoche">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>40</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pdfPoches">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>510</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Enregistrer sous PDF</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>110</y>
-        <width>47</width>
-        <height>14</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Famille</string>
-      </property>
+     <widget class="QWidget" name="modifierMedicament_2">
+      <attribute name="title">
+       <string>Modifier ou Supprimer une poche</string>
+      </attribute>
+      <widget class="QPushButton" name="supprimerPoche">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>390</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Supprimer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="consulterPoche">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>30</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Consulter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_23">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>30</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reference</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="modifierPoche">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>360</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>411</width>
+         <height>311</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Modifier Poche</string>
+       </property>
+       <widget class="QComboBox" name="cTypeEditPoche">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>60</y>
+          <width>62</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>120</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Id de donneur</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="dateDonEditPoche">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>170</y>
+          <width>110</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Date de don</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>47</width>
+          <height>14</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Volume</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="volumeEditPoche">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>220</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>220</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>mL</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="idEditPoche">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>120</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QComboBox" name="refEditPoche">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>30</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
-     <widget class="QDateEdit" name="dateEdit">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>200</y>
-        <width>110</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>200</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Date d'expiration</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>250</y>
-        <width>47</width>
-        <height>14</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Prix</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="prixEdit">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>250</y>
-        <width>81</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>230</x>
-        <y>250</y>
-        <width>21</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>DT</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="quantiteEdit">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>150</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>160</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Quantite</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="familleEdit">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>100</y>
-        <width>113</width>
-        <height>20</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QPushButton" name="BmedicamentDelete">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>390</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Supprimer</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="BconsulterMedicament">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
-       <y>30</y>
-       <width>93</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Consulter</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="refEdit">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>30</y>
-       <width>181</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_13">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>30</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Reference</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="BmedicamentsEdit">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>360</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Modifier</string>
-     </property>
     </widget>
    </widget>
   </widget>

@@ -1,5 +1,5 @@
 #include "banquedusang.h"
-#include "ui_banquedusang.h"
+
 
 banqueDuSang::banqueDuSang(QWidget *parent) :
     QDialog(parent),

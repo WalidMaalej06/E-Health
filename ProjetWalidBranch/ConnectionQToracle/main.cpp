@@ -3,6 +3,7 @@
 #include <QApplication>
 #include "connection.h"
 #include "pharmacie.h"
+#include <QFile>
 
 
 int main(int argc, char *argv[])
@@ -14,11 +15,16 @@ int main(int argc, char *argv[])
     MainWindow w;
     Pharmacie p;
 
+    QFile styleSheetFile(":/styleSheet/Integrid.qss");
+    styleSheetFile.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(styleSheetFile.readAll());
+    a.setStyleSheet(styleSheet);
+
 
     if(test)
         {
                //w.show();
-        qDebug() <<"saha hak connectit";
+        qDebug() <<"Connexion avec success";
         p.show();
 
 
