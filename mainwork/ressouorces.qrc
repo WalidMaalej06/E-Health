@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>StyleFile.qss</file>
+        <file>download.jpg</file>
+        <file>hush-naidoo-yo01Z-9HQAw-unsplash.jpg</file>
+    </qresource>
+</RCC>

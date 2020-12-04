@@ -1,0 +1,134 @@
+
+QPushButton{
+height:81px; width: 31px;
+background-color: #22b4b9;
+border-radius: 10px; padding: 2px;
+
+}
+QPushButton::hover{
+height:81px; width: 31px;
+background-color: #253776;
+border-radius: 10px; padding: 2px;
+}
+QLineEdit{
+/*background: #22b4b9;*/
+border-radius: 10px; padding: 2px;
+border:3px solid #22b4b9;
+}
+QMainWindow{
+        background-color: rgb(85,0,0);
+}
+QDialog{
+        background-color: #22b4b9;
+}
+QStackedWidget{
+        background-color: rgb(255,255,255);
+}
+QComboBox {
+    border: 3px solid #22b4b9;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #22b4b9, stop: 0.4 #22b4b9,
+                                 stop: 0.5 #22b4b9, stop: 1.0 #22b4b9);
+}
+
+/*------------------------------------Custom buttons-----------------------------------*/
+QMessageBox{
+background-color : rgb (255,255,255) ;
+}
+QPushButton#adduser{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/add-user-2202940.png);
+}
+QPushButton#adduser:hover {     
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (1).png);
+}
+QPushButton#users{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/networks-2202939.png);
+}
+QPushButton#users:hover {     
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (5).png);	
+}
+QPushButton#incomes{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/savings-2202913.png);
+}
+QPushButton#incomes:hover {    
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (6).png);
+}
+QPushButton#listing{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/pane-open-2202941.png);
+}
+QPushButton#listing:hover {
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (3).png);	
+}
+QPushButton#inbox{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/image-2202928.png);
+}
+QPushButton#inbox:hover {     
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (8).png);	
+}
+QPushButton#deleteuser{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/fake-person-2202934.png);
+}
+QPushButton#deleteuser:hover {     
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (2).png);
+}
+QPushButton#announcement{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/note-add-2202947.png);
+}
+QPushButton#announcement:hover {  
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (7).png);
+}
+QPushButton#back{
+background-color: rgba(255, 255, 255, 0);border: 0px;
+height:91;width:81;
+image: url(:/Images/Resources/Images/buttons 2/snooze-2202903.png);
+}
+QPushButton#back:hover {  
+background-color: rgba(255, 255, 255, 0);border: 0px;
+image: url(:/Images/Resources/Images/buttons 2/output-onlinepngtools (9).png);
+}
+
+ 
+QLabel#Baladitech{
+	background-color: rgba(255,255,255,0);border: 0px;
+        image: url(:/Images/Resources/image/Baladitech.png);
+	Width:531; Height:491;
+}
+QLabel#Titel_2,QLabel#Titel{
+	color: rgb(255, 255, 255);
+	font: 75 36pt "MS Shell Dlg 2";
+}
+QLabel{
+        color: #22b4b9;
+    font: 63 14pt "Bahnschrift SemiBold";
+}
