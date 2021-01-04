@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -39,7 +39,7 @@
       </rect>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="widget">
       <attribute name="title">
@@ -306,14 +306,14 @@ font-family:Calibri;
 QPushButton:hover
 {
 	background-color: #00000000;
-	border-color: rgb(30, 227, 0);
+	border-color: rgb(255, 0, 0);
 	/*color:rgb(30, 227, 0);*/
 }
 
 QPushButton:focus
 {
-	background-color:  rgb(30, 227, 0);
-	border-color: rgba(30, 227, 0,0);
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
 	color:rgb(255, 255, 255);
 }</string>
         </property>
@@ -575,7 +575,7 @@ QPushButton:focus
 }</string>
          </property>
          <property name="text">
-          <string>Valider</string>
+          <string>Rechercher</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_8">
@@ -583,6 +583,46 @@ QPushButton:focus
           <rect>
            <x>320</x>
            <y>60</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(255, 0, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
+	color:rgb(255, 255, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>Quitter</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="modifierpat_2">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>30</y>
            <width>75</width>
            <height>23</height>
           </rect>
@@ -615,7 +655,7 @@ QPushButton:focus
 }</string>
          </property>
          <property name="text">
-          <string>Quitter</string>
+          <string>Modifier</string>
          </property>
         </widget>
        </widget>
@@ -978,14 +1018,14 @@ font-family:Calibri;
 QPushButton:hover
 {
 	background-color: #00000000;
-	border-color: rgb(30, 227, 0);
+	border-color: rgb(255, 0, 0);
 	/*color:rgb(30, 227, 0);*/
 }
 
 QPushButton:focus
 {
-	background-color:  rgb(30, 227, 0);
-	border-color: rgba(30, 227, 0,0);
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
 	color:rgb(255, 255, 255);
 }</string>
         </property>
@@ -1011,7 +1051,7 @@ QPushButton:focus
       </rect>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="widget_2">
       <attribute name="title">
@@ -1186,14 +1226,14 @@ font-family:Calibri;
 QPushButton:hover
 {
 	background-color: #00000000;
-	border-color: rgb(30, 227, 0);
+	border-color: rgb(255, 0, 0);
 	/*color:rgb(30, 227, 0);*/
 }
 
 QPushButton:focus
 {
-	background-color:  rgb(30, 227, 0);
-	border-color: rgba(30, 227, 0,0);
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
 	color:rgb(255, 255, 255);
 }</string>
         </property>
@@ -1437,14 +1477,14 @@ font-family:Calibri;
 QPushButton:hover
 {
 	background-color: #00000000;
-	border-color: rgb(30, 227, 0);
+	border-color: rgb(255, 0, 0);
 	/*color:rgb(30, 227, 0);*/
 }
 
 QPushButton:focus
 {
-	background-color:  rgb(30, 227, 0);
-	border-color: rgba(30, 227, 0,0);
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
 	color:rgb(255, 255, 255);
 }</string>
          </property>
@@ -1673,6 +1713,33 @@ QPushButton:focus
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	background: transparent;
+	border-style:solid;
+	border-radius:7px;
+	border-width:1px;
+border-color: rgb(50, 53, 57);
+	color:rgb(0,0,0);
+	font-size:16px;
+font-family:Calibri;
+}
+
+QPushButton:hover
+{
+	background-color: #00000000;
+	border-color: rgb(30, 227, 0);
+	/*color:rgb(30, 227, 0);*/
+}
+
+QPushButton:focus
+{
+	background-color:  rgb(30, 227, 0);
+	border-color: rgba(30, 227, 0,0);
+	color:rgb(255, 255, 255);
+}</string>
+       </property>
        <property name="text">
         <string>Trier par cin</string>
        </property>
@@ -1785,14 +1852,14 @@ font-family:Calibri;
 QPushButton:hover
 {
 	background-color: #00000000;
-	border-color: rgb(30, 227, 0);
+	border-color: rgb(255, 0, 0);
 	/*color:rgb(30, 227, 0);*/
 }
 
 QPushButton:focus
 {
-	background-color:  rgb(30, 227, 0);
-	border-color: rgba(30, 227, 0,0);
+	background-color:  rgbrgb(255, 0, 0);
+	border-color: rgbargb(255, 0, 0);
 	color:rgb(255, 255, 255);
 }</string>
         </property>

@@ -230,36 +230,25 @@ void patient_rdv::on_pushButton_12_clicked()
 
 void patient_rdv::on_modifierpat_clicked()
 {
-        int cin=ui->le_cinmodif->text().toInt();
-        QString nom=ui->le_nom_2->text();
-        QString prenom = ui->le_prenom_2->text();
-        QString sexe=ui->le_sexe_2->text();
-        QString ville=ui->le_ville_2->text();
-        QString region=ui->le_region_2->text();
-        QString date_naissance=ui->le_date_2->text();
-        QString lieu=ui->le_lieu_2->text();
-        QMessageBox msg;
-        bool test=s.modifier(cin,nom,prenom,sexe,ville,region,date_naissance,lieu);
-
-        if(test)
-        {
-            ui->le_cinmodif->clear();
-            ui->le_nom_2->clear();
-            ui->le_prenom_2->clear();
-            ui->le_sexe_2->clear();
-            ui->le_ville_2->clear();
-            ui->le_region_2->clear();
-            ui->le_date_2->clear();
-            ui->le_lieu_2->clear();
-            ui->tab_patient->setModel(s.afficher());
-            msg.setText("modifiction avec succes");
-        }
-            else {
-            msg.setText("Echec au niveau de la modification d un patient");
-        }
-        msg.exec();
-
-
+    Patient p;
+            QSqlQuery query;
+            int cin=ui->le_cinmodif->text().toInt();
+            QString cin_string=QString::number(cin);
+           if(p.recherche_cin(cin))
+           {
+               query.prepare("SELECT * FROM PATIENT WHERE cin like :cin");
+               query.bindValue(0,cin_string);
+               query.exec();
+               while(query.next()){
+               ui->le_nom_2->setText(query.value(1).toString());
+               ui->le_prenom_2->setText(query.value(2).toString());
+               ui->le_sexe_2->setText(query.value(3).toString());
+               ui->le_ville_2->setText(query.value(4).toString());
+               ui->le_region_2->setText(query.value(5).toString());
+               ui->le_date_2->setText(query.value(5).toString());
+               ui->le_lieu_2->setText(query.value(5).toString());
+            }
+           }
 }
 
 void patient_rdv::on_pushButton_modifierrdv_clicked()
@@ -292,30 +281,34 @@ void patient_rdv::on_pushButton_modifierrdv_clicked()
 
 void patient_rdv::on_rech_patient_clicked()
 {
-    bool test;
-   Patient p;
-       int cin=0;
-       QString region=ui->lineEdit->text();
-       QString nom=ui->lineEdit->text();
-       QString choix=ui->comboBox->currentText();
-   if(choix=="nom")
-   {
-       test=p.recherche(nom,cin,region);
-   }
-   if(choix=="cin")
-   {
-      cin= nom.toInt();
-      test=p.recherche(nom,cin,region);
-   }
-   if(choix=="region")
-   {
+Patient p;
 
-       test=p.recherche(nom,cin,region);
-   }
-if(test)
-{
-ui->tab_patient->setModel(p.afficher());
-}
+if (ui->comboBox->currentText()=="cin")
+        {
+            int cin=ui->lineEdit->text().toInt();
+            if (p.recherche_cin(cin))
+            {
+                ui->tab_patient->setModel(p.afficher_cin(cin));
+            }
+        }
+        else if(ui->comboBox->currentText()=="nom")
+        {
+            QString nom=ui->lineEdit->text();
+            if (p.recherche_nom(nom))
+            {
+                ui->tab_patient->setModel(p.afficher_nom(nom));
+            }
+
+        }
+        else if(ui->comboBox->currentText()=="region")
+        {
+            QString region=ui->lineEdit->text();
+            if(p.recherche_region(region))
+            {
+                ui->tab_patient->setModel(p.afficher_region(region));
+            }
+        }
+
 }
 
 void patient_rdv::on_imp_patient_clicked()
@@ -501,4 +494,29 @@ void patient_rdv::on_pushButton_2_clicked()
                  ui->tab_rdv->show();
                  msgBox.setText("Tri avec succès.");
                  msgBox.exec();
+}
+
+void patient_rdv::on_modifierpat_2_clicked()
+{
+    Patient p;
+    QMessageBox msg;
+    p.setcin(ui->le_cinmodif->text().toInt());
+    p.setnom(ui->le_nom_2->text());
+    p.setprenom(ui->le_prenom_2->text());
+    p.setsexe(ui->le_sexe_2->text());
+    p.setville(ui->le_ville_2->text());
+    p.setville(ui->le_region_2->text());
+    p.setdate(ui->le_date_2->text());
+    p.setlieu(ui->le_lieu_2->text());
+
+    bool test=p.modifier(p.getcin());
+    if(test)
+    {
+        msg.setText("modification avec succès");
+        ui->tab_patient->setModel(p.afficher());
+    }
+    else
+        msg.setText("echec de modification");
+
+    msg.exec();
 }

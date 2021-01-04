@@ -54,6 +54,23 @@ bool Patient::supprimer(int cin)
      return query.exec();
 
 }
+bool Patient::recherche_cin(int cin){
+QMessageBox msgBox;
+    QSqlQuery query;
+     QString cin_string=QString::number(cin);
+    query.prepare("SELECT * FROM PATIENT WHERE CIN= :cin");
+    query.bindValue(":cin", cin_string);
+    if (query.exec() && query.next())
+    {
+            return true;
+    }
+    else
+    {
+        msgBox.setText("Patient n existe pas");
+        msgBox.exec();
+        return false;
+    }
+        }
 QSqlQueryModel*Patient::afficher()
 {
 
@@ -71,52 +88,90 @@ QSqlQueryModel*Patient::afficher()
 
    return model;
 }
-bool Patient::modifier(int cin,QString nom,QString prenom,QString sexe,QString ville,QString region,QString date_naissance,QString lieu){
-    QSqlQuery query;
+bool Patient::modifier(int cin)
+    {
+        QSqlQuery query;
+        QString cin_string=QString::number(cin);
+        if (recherche_cin(cin))
+        {
 
-    QString cin_string= QString::number(cin);
+              query.prepare("UPDATE PATIENT SET nom=:nom, prenom=:prenom, sexe=:sexe, ville=:ville, region=:region, date_naissance=:date_naissance,lieu=:lieu WHERE CIN=:cin");
+              query.bindValue(":cin", cin_string);
+              query.bindValue(":nom",nom);
+              query.bindValue(":prenom", prenom);
+              query.bindValue(":sexe", sexe);
+              query.bindValue(":ville", ville);
+              query.bindValue(":region", region);
+              query.bindValue(":date_naissance", date_naissance);
+              query.bindValue(":lieu", lieu);
 
-    query.prepare("UPDATE PATIENT SET  cin=:cin, nom=:nom,prenom=:prenom,sexe=:sexe ,ville=:ville,region=:region,date_naissance=:date_naissance,lieu=:lieu WHERE cin=:cin ");
-    query.bindValue(":cin", cin_string);
-    query.bindValue(":nom", nom);
-    query.bindValue(":prenom", prenom);
-    query.bindValue(":sexe", sexe);
-    query.bindValue(":ville", ville);
-    query.bindValue(":region", region);
-    query.bindValue(":date_naissance", date_naissance);
-    query.bindValue(":lieu", lieu);
-    return  query.exec();
-}
-bool Patient::recherche(QString nom,int cin,QString region)
+        }
+              return query.exec();
+    }
+bool Patient::recherche_nom(QString nom)
 {
     QMessageBox msgBox;
-    QMessageBox msgBox1;
     QSqlQuery query;
-    bool retour=0;
-    int count=0;
-    query.prepare("SELECT * FROM Patient WHERE nom= ? or cin= ? or region= ?");
-    query.addBindValue(nom);
-    query.addBindValue(cin);
-    query.addBindValue(region);
-    if(query.exec() )
-        {
-while (query.next())
-   {
-   count ++;
-    }
-if(count==1)
-   {
-    msgBox.setText("Patient existe");
-    msgBox.exec();
-    retour=1;
-   }
-else if (count<1)
-{
-    msgBox1.setText("Patient n'existe pas");
-        msgBox1.exec();
-        retour=0;
-}
-        }
-    return retour;
 
+    query.prepare("SELECT * FROM PATIENT WHERE NOM= :nom");
+    query.bindValue(":nom", nom);
+    if (query.exec() && query.next())
+    {
+            return true;
+    }
+    else
+    {
+
+        msgBox.setText("Patient n existe pas");
+        msgBox.exec();
+        return false;
+    }
+}
+
+
+
+bool Patient::recherche_region(QString region)
+{
+    QMessageBox msgBox;
+    QSqlQuery query;
+
+    query.prepare("SELECT * FROM PATIENT WHERE REGION= :region");
+    query.bindValue(":region",region);
+    if (query.exec() && query.next())
+    {
+            return true;
+    }
+    else
+    {
+        msgBox.setText("Patient n existe pas");
+        msgBox.exec();
+        return false;
+    }
+}
+QSqlQueryModel* Patient::afficher_cin(int cin)
+{
+    QSqlQueryModel* model= new QSqlQueryModel();
+    QString CIN_string=QString::number(cin);
+
+          model->setQuery("SELECT * FROM PATIENT WHERE CIN='"+CIN_string+"'");
+
+    return model;
+}
+
+QSqlQueryModel* Patient::afficher_nom(QString nom)
+{
+    QSqlQueryModel* model= new QSqlQueryModel();
+
+          model->setQuery("SELECT * FROM PATIENT WHERE NOM='"+nom+"'");
+
+    return model;
+}
+
+QSqlQueryModel* Patient::afficher_region(QString region)
+{
+    QSqlQueryModel* model= new QSqlQueryModel();
+
+          model->setQuery("SELECT * FROM PATIENT WHERE SALAIRE='"+region+"'");
+
+    return model;
 }

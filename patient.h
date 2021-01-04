@@ -36,8 +36,14 @@ public:
     bool ajouter();
      QSqlQueryModel* afficher();
       bool supprimer(int);
-      bool modifier(int,QString,QString,QString,QString,QString,QString,QString);
-      bool recherche(QString nom,int cin,QString region);
+      bool modifier(int);
+      bool recherche(QString nom ,int cin,QString region);
+      bool recherche_cin(int);
+      bool recherche_nom(QString);
+          bool recherche_region(QString);
+          QSqlQueryModel* afficher_cin(int);
+              QSqlQueryModel* afficher_nom(QString);
+              QSqlQueryModel* afficher_region(QString);
  private:
  int cin;
  QString nom,prenom,sexe,region,ville,date_naissance,lieu;
