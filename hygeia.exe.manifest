@@ -1,0 +1,16 @@
+<?xml vesrion="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1 manifestVersion="1.0">
+  <assemblyIdentity version="2.0.0.0" processorArchitecture="X86"
+  name="gokulnathvc.coolapp" type="win32" />
+  <description>Pluginbot.net Central device management</description>
+  <dependency />
+  <!--Identity the application security requirements. -->
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+   <security>
+	<requestedExecutionLevel
+	level="requireAdministrator"
+	uiACCess="false"/>
+	</requestedPrivileges>
+	</security>
+	</trustInfo>
+</assembly>

@@ -63,11 +63,10 @@ QSqlQueryModel*Patient::afficher()
    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
    model->setHeaderData(2,Qt::Horizontal,QObject::tr("PRENOM"));
    model->setHeaderData(3,Qt::Horizontal,QObject::tr("SEXE"));
-    model->setHeaderData(4,Qt::Horizontal,QObject::tr("VILLE"));
-    model->setHeaderData(5,Qt::Horizontal,QObject::tr("REGION"));
-    model->setHeaderData(6,Qt::Horizontal,QObject::tr("DATE_NAISSANCE"));
-    model->setHeaderData(7,Qt::Horizontal,QObject::tr("LIEU"));
-
+   model->setHeaderData(4,Qt::Horizontal,QObject::tr("VILLE"));
+   model->setHeaderData(5,Qt::Horizontal,QObject::tr("REGION"));
+   model->setHeaderData(6,Qt::Horizontal,QObject::tr("DATE_NAISSANCE"));
+   model->setHeaderData(7,Qt::Horizontal,QObject::tr("LIEU"));
 
    return model;
 }

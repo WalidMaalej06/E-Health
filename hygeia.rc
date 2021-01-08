@@ -1,0 +1,4 @@
+#include <windows.h>
+
+ID_ICON		ICON	DISCARDABLE	"logo.ico"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT__MANIFEST "hygeia.exe.manifest"

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>rec/close.png</file>
+        <file>rec/copy.png</file>
+        <file>rec/cut.png</file>
+        <file>rec/paste.png</file>
+        <file>rec/bg.png</file>
+        <file>rec/doctor.png</file>
+    </qresource>
+</RCC>

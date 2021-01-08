@@ -1,30 +1,25 @@
-#include "mainwindow.h"
+#include "hygeia.h"
 #include <QApplication>
-#include <QMessageBox>
-#include "connection.h"
-#include "patient_rdv.h"
-#include "ui_patient_rdv.h"
+#include <QDebug>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    Connection c;
-    patient_rdv P;
-    bool test=c.createconnect();
-    if(test)
-    {//w.show();
-        P.show();
-        QMessageBox::information(nullptr, QObject::tr("database is open"),
-                    QObject::tr("connection successful.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
+    //stylesheet
+    QFile styleFile( "D:/bourguiba/ESPRIT/Second Year/Projet C++/Integration/Ubuntu.qss" );
+    styleFile.open( QFile::ReadOnly );
+    QString style( styleFile.readAll() );
+    a.setStyleSheet( style );
 
-}
+    connection c;
+    bool test=c.createconnection();
+    hygeia w;
+
+    if (test)
+        qDebug() << "connexion successful";
     else
-        QMessageBox::critical(nullptr, QObject::tr("database is not open"),
-                    QObject::tr("connection failed.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);
-
-
+        qDebug() << "connexion failed";
+    w.show();
 
     return a.exec();
 }
